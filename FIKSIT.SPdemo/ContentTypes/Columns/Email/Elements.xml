@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{f83177d5-46ba-4218-942a-5685a18dc9ec}"
+       Name="Email"
+       DisplayName="Email"
+       Type="Text"
+       Required="FALSE"
+       Group="FIKSIT.Demo">
+  </Field>
+</Elements>

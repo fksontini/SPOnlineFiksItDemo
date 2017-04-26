@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="19016d0b-8451-4914-952a-b6a45351ab99" solutionId="19016d0b-8451-4914-952a-b6a45351ab99" resetWebServer="false" sharePointProductVersion="16.0" name="FIKSIT.SPdemo" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="3d7c0a39-02cf-44d2-adff-2fa8f657081c" />
+    <featureReference itemId="31062cc1-b428-4882-9223-b650a90af4c2" />
+    <featureReference itemId="43aaa533-d426-49a5-a7ad-0c881e099755" />
+  </features>
+</package>

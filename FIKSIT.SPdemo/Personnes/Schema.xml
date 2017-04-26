@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Personnes" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Personnes" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /><ContentType ID="0x0100FE8239634CC040D5921ED31DE281AC3A" Name="FIKSIT.Personnes" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{33a1feeb-89df-448f-b11a-f68cf2d1aebd}" DisplayName="Name" Required="FALSE" Name="Name" /><FieldRef ID="{530cb8e9-523b-43e2-85e8-2366e5e1744f}" DisplayName="Surname" Required="FALSE" Name="Surname" /><FieldRef ID="{c5ede7f5-5548-4557-8320-ddff01522058}" DisplayName="Date Birth" Required="FALSE" Name="DateBirth" /><FieldRef ID="{e52cb737-c950-4326-aa98-5d915e3fd0a3}" DisplayName="Cin" Required="FALSE" Name="Cin" /><FieldRef ID="{f83177d5-46ba-4218-942a-5685a18dc9ec}" DisplayName="Email" Required="FALSE" Name="Email" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field ID="{33a1feeb-89df-448f-b11a-f68cf2d1aebd}" Name="Name" DisplayName="Name" Type="Text" Required="FALSE" Group="FIKSIT.Demo"></Field><Field ID="{530cb8e9-523b-43e2-85e8-2366e5e1744f}" Name="Surname" DisplayName="Surname" Type="Text" Required="FALSE" Group="FIKSIT.Demo"></Field><Field ID="{c5ede7f5-5548-4557-8320-ddff01522058}" Name="DateBirth" DisplayName="Date Birth" Type="Text" Required="FALSE" Group="FIKSIT.Demo"></Field><Field ID="{e52cb737-c950-4326-aa98-5d915e3fd0a3}" Name="Cin" DisplayName="Cin" Type="Text" Required="FALSE" Group="FIKSIT.Demo"></Field><Field ID="{f83177d5-46ba-4218-942a-5685a18dc9ec}" Name="Email" DisplayName="Email" Type="Text" Required="FALSE" Group="FIKSIT.Demo"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="Name" /><FieldRef Name="Surname" /><FieldRef Name="DateBirth" /><FieldRef Name="Cin" /><FieldRef Name="Email" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

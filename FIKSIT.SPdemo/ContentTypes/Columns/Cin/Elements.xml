@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{e52cb737-c950-4326-aa98-5d915e3fd0a3}"
+       Name="Cin"
+       DisplayName="Cin"
+       Type="Text"
+       Required="FALSE"
+       Group="FIKSIT.Demo">
+  </Field>
+</Elements>

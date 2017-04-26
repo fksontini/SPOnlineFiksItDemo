@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100FE8239634CC040D5921ED31DE281AC3A" Name="FIKSIT.Personnes" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{33a1feeb-89df-448f-b11a-f68cf2d1aebd}" DisplayName="Name" Required="FALSE" Name="Name" />
+      <FieldRef ID="{530cb8e9-523b-43e2-85e8-2366e5e1744f}" DisplayName="Surname" Required="FALSE" Name="Surname" />
+      <FieldRef ID="{c5ede7f5-5548-4557-8320-ddff01522058}" DisplayName="Date Birth" Required="FALSE" Name="DateBirth" />
+      <FieldRef ID="{e52cb737-c950-4326-aa98-5d915e3fd0a3}" DisplayName="Cin" Required="FALSE" Name="Cin" />
+      <FieldRef ID="{f83177d5-46ba-4218-942a-5685a18dc9ec}" DisplayName="Email" Required="FALSE" Name="Email" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

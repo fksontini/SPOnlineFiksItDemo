@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{c5ede7f5-5548-4557-8320-ddff01522058}"
+       Name="DateBirth"
+       DisplayName="Date Birth"
+       Type="Text"
+       Required="FALSE"
+       Group="FIKSIT.Demo">
+  </Field>
+</Elements>
